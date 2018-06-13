@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+  		<meta charset="utf-8">
+  		<title>Задание 1</title>
+		<script>
+			var n=0;
+			var x=+prompt('Введите число');
+			var i=1;
+			while(i<100){
+				var res=x/i;
+				i++;
+				// document.write(res+'<br>');
+				if (Number.isInteger(res)) {
+					n++;
+				}
+			}
+			alert(n);
+			location.reload();
+		</script>
+	</head>
+	<body></body>
+</html>
