@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+  		<meta charset="utf-8">
+  		<title>Задание 2</title>
+		<script>
+			var x=0, y=10;
+			function isOdd(x,y){
+				do{
+					if(x==0){
+						var c=(x+'- это ноль'+'<br>');
+						x++;
+					}
+					else if (x%2==0) {
+						c=(x+'- это четное число'+'<br>');
+						x++;
+					}
+					else  {
+						c=(x+'- это нечетное число'+'<br>');
+						x++;
+					}
+				document.write(c);
+				}
+				while(x<=y);
+			}
+			isOdd(x,y);
+		</script>
+	</head>
+	<body></body>
+</html>
