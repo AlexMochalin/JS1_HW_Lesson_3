@@ -4,19 +4,22 @@
   		<meta charset="utf-8">
   		<title>Задание 1</title>
 		<script>
-			var n=0;
-			var x=+prompt('Введите число');
-			var i=1;
-			while(i<100){
-				var res=x/i;
-				i++;
-				// document.write(res+'<br>');
-				if (Number.isInteger(res)) {
-					n++;
+			var x=2;
+			while(x<=100){
+				var i=1;
+				var n=0;
+				while(i<=100){
+					var res=x/i;
+					i++;
+					if (Number.isInteger(res)) {
+						n++;
+					}
 				}
+				if(n<=2){
+				document.write(x+' ');
+				}
+				x++;
 			}
-			alert(n);
-			location.reload();
 		</script>
 	</head>
 	<body></body>
